@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'user_profile_screen.dart';
+import 'package:user_app/config/router.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override
@@ -44,20 +44,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pushNamed(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => UserProfileScreen(
-                          name: nameController.text,
-                          age: ageController.text,
-                          job: jobController.text,
-                        ),
-                      ),
+                      AppRoutes.userProfile,
+                      arguments: {
+                        'name': nameController.text,
+                        'age': ageController.text,
+                        'job': jobController.text,
+                      },
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.yellow, // Color del botón
-                    foregroundColor: Colors.black, // Color del texto
+                    backgroundColor: Colors.yellow,
+                    foregroundColor: Colors.black,
                   ),
                   child: Text('Guardar y Ver Perfil'),
                 ),

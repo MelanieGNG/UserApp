@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:user_app/config/router.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [Colors.teal, Colors.purple],
             begin: Alignment.topLeft,
@@ -20,11 +21,11 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // Acción del botón
+                  Navigator.pushNamed(context, AppRoutes.profile);
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.yellow, // Color del botón
-                  foregroundColor: Colors.black, // Color del texto
+                  backgroundColor: Colors.yellow,
+                  foregroundColor: Colors.black,
                 ),
                 child: Text('Crear perfil'),
               ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'package:user_app/config/router.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      initialRoute: AppRoutes.home,
+      onGenerateRoute: AppRoutes.generateRoute,
     );
   }
 }

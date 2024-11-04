@@ -31,8 +31,8 @@ class UserProfileScreen extends StatelessWidget {
                   Navigator.popUntil(context, (route) => route.isFirst);
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.yellow, // Color del botón
-                  foregroundColor: Colors.black, // Color del texto
+                  backgroundColor: Colors.yellow,
+                  foregroundColor: Colors.black,
                 ),
                 child: Text('Regresar a Inicio'),
               ),
