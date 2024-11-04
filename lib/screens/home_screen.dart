@@ -17,17 +17,18 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(Icons.person, size: 100, color: Colors.white),
+              Text('INICIO', style: TextStyle(fontSize: 20, color: Colors.white)),
+              Icon(Icons.person, size: 120, color: Colors.white),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, AppRoutes.profile);
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.yellow,
+                  backgroundColor: Colors.purpleAccent,
                   foregroundColor: Colors.black,
                 ),
-                child: Text('Crear perfil'),
+                child: Text('CREAR PERFIL', style: TextStyle(fontWeight: FontWeight.bold,)),
               ),
             ],
           ),

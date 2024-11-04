@@ -30,16 +30,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
               children: [
                 TextField(
                   controller: nameController,
-                  decoration: InputDecoration(labelText: 'Nombre'),
+                  decoration: InputDecoration(labelText: 'Nombre', labelStyle: TextStyle(color: Colors.white)),
                 ),
                 TextField(
                   controller: ageController,
-                  decoration: InputDecoration(labelText: 'Edad'),
+                  decoration: InputDecoration(labelText: 'Edad', labelStyle: TextStyle(color: Colors.white)),
                   keyboardType: TextInputType.number,
                 ),
                 TextField(
                   controller: jobController,
-                  decoration: InputDecoration(labelText: 'Ocupación'),
+                  decoration: InputDecoration(labelText: 'Ocupación', labelStyle: TextStyle(color: Colors.white)),
                 ),
                 SizedBox(height: 20),
                 ElevatedButton(
@@ -55,10 +55,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.yellow,
+                    backgroundColor: Colors.purpleAccent,
                     foregroundColor: Colors.black,
                   ),
-                  child: Text('Guardar y Ver Perfil'),
+                  child: Text('GUARDAR Y VER PERFIL', style: TextStyle(fontWeight: FontWeight.bold,)),
                 ),
               ],
             ),
