@@ -28,6 +28,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Text('INGRESA LOS SIGUIENTES DATOS:', style: TextStyle(fontSize: 20, color: Colors.white)),
                 TextField(
                   controller: nameController,
                   decoration: InputDecoration(labelText: 'Nombre', labelStyle: TextStyle(color: Colors.white)),

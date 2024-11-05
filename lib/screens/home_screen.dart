@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text('INICIO', style: TextStyle(fontSize: 20, color: Colors.white)),
+              Text('INICIO', style: TextStyle(fontSize: 28, color: Colors.white)),
               Icon(Icons.person, size: 120, color: Colors.white),
               SizedBox(height: 20),
               ElevatedButton(

@@ -22,6 +22,8 @@ class UserProfileScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Text('MI PERFIL', style: TextStyle(fontSize: 28, color: Colors.white)),
+              Icon(Icons.person, size: 90, color: Colors.white),
               Text('Nombre: $name', style: TextStyle(fontSize: 20, color: Colors.white)),
               Text('Edad: $age', style: TextStyle(fontSize: 20, color: Colors.white)),
               Text('Ocupación: $job', style: TextStyle(fontSize: 20, color: Colors.white)),
